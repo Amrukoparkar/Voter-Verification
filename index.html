@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voter Verification Form</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="center">
+  <div class="form-container">
+    <h1>Voter Verification Form</h1> 
+    <p>Please complete the provided form to determine your eligibility for voting. Your participation in this crucial civic duty is greatly appreciated.</p>
+
+    <form id="voterForm" onsubmit="submitForm(event)">
+      <label for="fullname">Full Name:</label><br>
+      <input type="text" placeholder="Your full name" id="fullname" name="fullname" required><br>
+      
+      <label for="email">Email:</label><br>
+      <input type="email" placeholder="Your email" id="email" name="email" required><br>
+      
+      <label for="phone">Phone:</label><br>
+      <input type="tel" placeholder="Your phone number" id="phone" name="phone" required><br>
+      
+      <label for="address">Address:</label><br>
+      <textarea id="address" placeholder="Your address" name="address" rows="4" required></textarea><br>
+      
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob" required><br>
+      
+      <label for="age">Age:</label><br>
+      <input type="text" placeholder="Your age" id="age" name="age" required><br><br>
+      
+      <input type="submit" value="Submit">
+    </form>
+
+    <div id="result" style="display:none;"></div>
+  </div>
+</div>
+
+<script src="./script.js"> </script>
+
+</body>
+</html>
